@@ -165,7 +165,7 @@
     justify-content: center;
     align-items: center;
     align-items: center;
-    right: 460px;
+    left: 862px;
     top: 162px;
     padding: 4px 10px;
     border-radius: 3px;
@@ -223,5 +223,79 @@
     border-radius: 8px;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.08);
     background: rgb(255, 255, 255);
+  }
+  .wrapper .content .content__block .content__block__card-buy .pay {
+    position: static;
+    width: 215.81px;
+    height: 51.42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+  }
+  .wrapper .content .content__block .content__block__card-buy .pay .pay__title {
+    width: 134px;
+    height: 17px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgba(56, 56, 56, 0.8);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 130%;
+    text-align: left;
+    margin: 0;
+  }
+  .wrapper .content .content__block .content__block__card-buy .pay .pay__method {
+    width: 215.81px;
+    height: 26.42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
+  .wrapper .content .content__block .content__block__card-buy .pay .pay__method .pay__method__icon {
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  .wrapper .content .content__block .content__block__card-buy .info {
+    width: 265px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+  }
+  .wrapper .content .content__block .content__block__card-buy .info .info__title {
+    color: rgb(56, 56, 56);
+  }
+  .wrapper .content .content__block .content__block__card-buy .info .info__link {
+    color: rgb(221, 78, 0);
+    cursor: pointer;
+  }
+  .wrapper .content .content__block .content__block__card-buy .button {
+    width: 219px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #F77833;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: -1%;
+    text-align: right;
+  }
+  .wrapper .content .content__block .content__block__card-buy .button .price {
+    font-weight: bold;
   }
 }/*# sourceMappingURL=style.css.map */
