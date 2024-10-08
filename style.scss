@@ -300,6 +300,128 @@ background: rgb(245, 245, 245);
             }
          }
       }
+      .content__reviews {
+         position: static;
+         width: 831px;
+         height: 597px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 24px;
+         .content__reviews__title {
+            width: 307px;
+            height: 34px;
+            // display: flex;
+            // flex-direction: row;
+            // justify-content: flex-start;
+            align-items: flex-start;
+            color: rgb(66, 66, 66);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 120%;
+            // text-align: left;
+         }
+         .card {
+            width: 831px;
+            height: 432px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 24px;
+            .card__review {
+               width: 261px;
+               height: 432px;
+               display: flex;
+               flex-direction: column;
+               justify-content: flex-start;
+               align-items: flex-start;
+               gap: 16px;
+               padding: 30px 24px;
+               border-radius: 8px;
+               box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.08);
+               background: rgb(255, 255, 255);
+               .card__review__date {
+                  width: fit-content;
+                  height: 17px;
+                  // display: flex;
+                  // flex-direction: row;
+                  // justify-content: flex-start;
+                  align-items: flex-start;
+                  // gap: 10px;
+                  color: rgb(134, 134, 134);
+                  font-size: 13px;
+                  font-weight: 400;
+                  line-height: 130%;
+                  letter-spacing: 0%;
+                  text-align: left;
+               }
+               .card__review__user {
+                  width: 212px;
+                  height: 54px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: flex-start;
+                  align-items: flex-start;
+                  gap: 6px;
+                  .card__review__user__name {
+                     width: 212px;
+                     height: 36px;
+                     // display: flex;
+                     // flex-direction: column;
+                     // justify-content: flex-start;
+                     align-items: flex-start;
+                     /* Body 2 Semibold */
+                     color: rgb(56, 56, 56);
+                     font-size: 14px;
+                     font-weight: 600;
+                     line-height: 130%;
+                     letter-spacing: 0%;
+                     text-align: left;
+                  }
+                  .card__review__user__rating {
+                     width: 120px;
+                     height: 12px;
+                     display: flex;
+                     flex-direction: row;
+                     justify-content: flex-start;
+                     align-items: flex-start;
+                     gap: 8px;
+                     .card__review__user__rating__star {
+                        width: 12px;
+                        height: 12px;
+                     }
+                  }
+               }
+               .card__review__title {
+                  width: 213px;
+                  height: 23px;
+                  flex: none;
+                  order: 0;
+                  align-self: stretch;
+                  flex-grow: 0;
+                  margin: 12px 0px;
+                  /* Body 1 Bold */
+                  color: rgb(56, 56, 56);
+                  font-size: 16px;
+                  font-weight: 700;
+                  line-height: 120%;
+                  letter-spacing: 0%;
+                  text-align: left;
+               }
+               .card__review__message {
+                  width: 218px;
+                  height: 244.25px;
+                  color: rgb(94, 94, 94);
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 130%;
+                  text-align: left;
+               }
+            }
+         }
+      }
      
    }
 }
