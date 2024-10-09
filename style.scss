@@ -2,6 +2,21 @@
    margin: 0;
    padding: 0;
 }
+.styled-scrollbars {
+   /* плашка-бегунок и фон */
+   scrollbar-color: #999 #333;
+ }
+ .styled-scrollbars::-webkit-scrollbar {
+   width: 10px; /* в основном для вертикальных полос прокрутки */
+   height: 10px; /* в основном для горизонтальных полос прокрутки */
+ }
+ .styled-scrollbars::-webkit-scrollbar-thumb { /* плашка-бегунок */
+   background: #999;
+ }
+ .styled-scrollbars::-webkit-scrollbar-track { /* фон */
+   background: #333;
+ }
+
 @media(max-width: 1440px) {
 
 .wrapper{
@@ -259,10 +274,6 @@ background: rgb(245, 245, 245);
             .info {
                width: 265px;
                height: 38px;
-               // display: flex;
-               // flex-direction: column;
-               // justify-content: flex-start;
-               // align-items: center;
                font-size: 16px;
                font-weight: 400;
                line-height: 120%;
@@ -307,6 +318,7 @@ background: rgb(245, 245, 245);
          display: flex;
          flex-direction: column;
          align-items: flex-start;
+         align-items: center;
          gap: 24px;
          .content__reviews__title {
             width: 831px;
@@ -336,6 +348,24 @@ background: rgb(245, 245, 245);
             gap: 24px;
             border: none;
             background: rgb(245, 245, 245);
+            overflow-x: auto;
+            overflow-y: hidden;
+            /* Устанавливаем размеры и цвет фона для скроллбара */
+            &::-webkit-scrollbar {
+               width: 831px;
+               height: 15px; 
+               border-radius: 7px;
+               background: rgb(221, 221, 221);
+            }
+            /* Стилизуем ползунок скроллбара */
+            &::-webkit-scrollbar-thumb { 
+               border-radius: 7px;
+               background: rgb(168, 168, 168);
+            }
+            /* Стили для ползунка при наведении курсора */
+            &::-webkit-scrollbar-thumb:hover { 
+               background: #929090; 
+            }
             .card__review {
                width: 261px;
                height: 432px;
@@ -414,6 +444,22 @@ background: rgb(245, 245, 245);
                   padding: 0;
                }
             }
+         }
+         .content__reviews__button {
+            width: 437px;
+            height: 52px;
+            // align-items: center;
+            padding: 16px 24px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.08);
+            background: rgb(247, 120, 51);
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: -1%;
+            text-align: center;
          }
       }
      
