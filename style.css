@@ -304,16 +304,24 @@
     height: 597px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 24px;
   }
   .wrapper .content .content__reviews .content__reviews__title {
-    width: 307px;
+    width: 831px;
     height: 34px;
+    display: flex;
+    gap: 10px;
     align-items: flex-start;
     color: rgb(66, 66, 66);
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 120%;
+    margin-top: 24px;
+  }
+  .wrapper .content .content__reviews .content__reviews__title .span {
+    color: rgb(66, 66, 66);
+    font-size: 14px;
     font-weight: 400;
     line-height: 120%;
   }
@@ -392,12 +400,10 @@
   .wrapper .content .content__reviews .card .card__review .card__review__title {
     width: 213px;
     height: 23px;
-    /* Body 1 Bold */
     color: rgb(56, 56, 56);
     font-size: 16px;
     font-weight: 700;
     line-height: 120%;
-    letter-spacing: 0%;
     text-align: left;
     margin: 0;
   }
