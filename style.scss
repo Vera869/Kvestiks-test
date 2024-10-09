@@ -1,21 +1,13 @@
+@import '@/variables';
+
 * {
    margin: 0;
    padding: 0;
 }
-.styled-scrollbars {
-   /* плашка-бегунок и фон */
-   scrollbar-color: #999 #333;
- }
- .styled-scrollbars::-webkit-scrollbar {
-   width: 10px; /* в основном для вертикальных полос прокрутки */
-   height: 10px; /* в основном для горизонтальных полос прокрутки */
- }
- .styled-scrollbars::-webkit-scrollbar-thumb { /* плашка-бегунок */
-   background: #999;
- }
- .styled-scrollbars::-webkit-scrollbar-track { /* фон */
-   background: #333;
- }
+body {
+   width: 1440px;
+   height: 1160px;
+}
 
 @media(max-width: 1440px) {
 
@@ -448,7 +440,6 @@ background: rgb(245, 245, 245);
          .content__reviews__button {
             width: 437px;
             height: 52px;
-            // align-items: center;
             padding: 16px 24px;
             border: none;
             border-radius: 8px;
