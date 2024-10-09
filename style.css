@@ -325,6 +325,8 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 24px;
+    border: none;
+    background: rgb(245, 245, 245);
   }
   .wrapper .content .content__reviews .card .card__review {
     width: 261px;
@@ -350,10 +352,13 @@
     line-height: 130%;
     letter-spacing: 0%;
     text-align: left;
+    margin: 0;
   }
   .wrapper .content .content__reviews .card .card__review .card__review__user {
-    width: 212px;
-    height: 54px;
+    width: 213px;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-height: 54px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -362,23 +367,22 @@
   }
   .wrapper .content .content__reviews .card .card__review .card__review__user .card__review__user__name {
     width: 212px;
-    height: 36px;
-    align-items: flex-start;
-    /* Body 2 Semibold */
+    height: -moz-fit-content;
+    height: fit-content;
+    max-height: 36px;
+    display: flex;
+    flex-direction: column;
     color: rgb(56, 56, 56);
     font-size: 14px;
     font-weight: 600;
-    line-height: 130%;
-    letter-spacing: 0%;
     text-align: left;
+    margin: 0;
   }
   .wrapper .content .content__reviews .card .card__review .card__review__user .card__review__user__rating {
-    width: 120px;
+    width: 212px;
     height: 12px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
     gap: 8px;
   }
   .wrapper .content .content__reviews .card .card__review .card__review__user .card__review__user__rating .card__review__user__rating__star {
@@ -388,11 +392,6 @@
   .wrapper .content .content__reviews .card .card__review .card__review__title {
     width: 213px;
     height: 23px;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 12px 0px;
     /* Body 1 Bold */
     color: rgb(56, 56, 56);
     font-size: 16px;
@@ -400,6 +399,7 @@
     line-height: 120%;
     letter-spacing: 0%;
     text-align: left;
+    margin: 0;
   }
   .wrapper .content .content__reviews .card .card__review .card__review__message {
     width: 218px;
@@ -409,5 +409,6 @@
     font-weight: 400;
     line-height: 130%;
     text-align: left;
+    padding: 0;
   }
 }/*# sourceMappingURL=style.css.map */
